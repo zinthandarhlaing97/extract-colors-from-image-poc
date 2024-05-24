@@ -79,7 +79,7 @@ const ExtractedColorsPalette = () => {
         show={showSnackbar}
         style={{
           backgroundColor: selectedColor?.hex,
-          color: getTextColor(selectedColor!.hex),
+          color: selectedColor ? getTextColor(selectedColor.hex) : "#000",
         }}
         onClose={() => setShowSnackbar(false)}
       />
