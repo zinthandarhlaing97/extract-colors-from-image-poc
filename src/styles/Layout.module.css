@@ -1,0 +1,31 @@
+.main {
+  background: linear-gradient(
+        var(--secondary-color) 30%,
+        rgba(255, 255, 255, 0) 0
+      )
+      0 0,
+    radial-gradient(
+        circle closest-side,
+        var(--secondary-color) 53%,
+        rgba(255, 255, 255, 0) 0
+      )
+      0 -35px,
+    radial-gradient(
+        circle closest-side,
+        var(--secondary-color) 50%,
+        rgba(255, 255, 255, 0) 0
+      )
+      55px -35px var(--background-color);
+  background-size: 110px 200px;
+  background-repeat: repeat-x;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Barlow", sans-serif;
+  color: var(--text-color);
+}

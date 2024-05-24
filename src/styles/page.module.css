@@ -1,0 +1,63 @@
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-family: "Barlow", sans-serif;
+}
+
+.main h1 {
+  font-family: "Concert One", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 0 var(--background-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1024px;
+  max-width: 95vw;
+}
+
+.grid {
+  margin: 2rem 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.griditem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  border-radius: 18px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 450px;
+  max-height: 50vh;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main h1 {
+    font-size: 1.5rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+  }
+  .card {
+    max-height: none;
+    height: unset;
+    min-height: 300px;
+  }
+}

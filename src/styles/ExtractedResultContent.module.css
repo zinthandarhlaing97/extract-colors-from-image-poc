@@ -1,0 +1,20 @@
+.grid {
+  flex: 3 2;
+  display: flex;
+  gap: 1rem;
+}
+
+.griditem {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .griditem {
+    min-height: 300px;
+  }
+}
